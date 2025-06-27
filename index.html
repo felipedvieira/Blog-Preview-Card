@@ -19,7 +19,7 @@
     body{
     background-color:#F4D04E;
     margin: 0;
-    font-family: "Figtree", sans-serif;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-smoothing: grayscale;
     }
@@ -31,7 +31,16 @@
     h1{
       margin: 0;
     }
-
+    
+    a{
+      text-decoration: none;
+      color:black;
+      margin: 0;
+    }
+    a:hover{
+      color:#F4D04E;
+      
+    }
     .relative{
       position: relative;
     }
@@ -58,7 +67,6 @@
       background-color: #F4D04E;
       width: 82px;
       height: 29px;
-      font-weight: bold;
       text-align: center;
       border-radius: 5px;
     }
@@ -70,9 +78,35 @@
     .p-ele{
       padding: 24px;
     }
+
     .bolder{
       font-weight: 800;
     }
+
+    .text-Bold-24px{
+      font-family: "Figtree-ExtraBold", sans-serif;
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: bolder;
+    }
+    .text-Medium-16px{
+      font-family: "Figtree-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    .text-Medium-14px{
+      font-family: "Figtree-Medium", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+    }
+    .text-Bold-14px{
+      font-family: "Figtree-ExtraBold", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      font-weight: bolder;
+    }
+    
+
   </style>
 
 <body>
@@ -88,19 +122,19 @@
 
       <div> 
         <div class="yellowbox relative">
-          <p style="padding: 6px 4px 12px 4px;">Learning</p>
+          <p class= "text-Bold-14px" style="padding: 6px 4px 12px 4px;">Learning</p>
         </div>
 
-      <p style="padding-top:12px;">Published 21 Dec 2023</p>
+      <p class="text-Medium-14px" style="padding-top:12px; padding-bottom: 12px;">Published 21 Dec 2023</p>
 
-      <h1 style="padding-top:12px;">HTML & CSS foundations</h1>
+      <a href="#" class= "text-Bold-24px">HTML & CSS foundations</a>
 
-      <p style="padding-top:12px; margin-bottom: 22px; color:#6B6B6B">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <p class= "text-Medium-16px" style="padding-top:12px; margin-bottom: 4px; color:#6B6B6B">These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </div>
 
       <div class="flex" style="padding-top:28px">
         <img src="assets\images\image-avatar.webp" alt="pfp" style="width: 32px; height: 32px;">
-        <p style="padding-top: 6px; padding-left: 10px; font-weight:bold">Greg Hooper</p>
+        <p class="text-Bold-14px" style="padding-top: 6px; padding-left: 10px; font-weight:bold">Greg Hooper</p>
       </div>
       </div>
     </div>
@@ -123,7 +157,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">felipedvieira</a>.
   </div>
 </body>
 </html>
