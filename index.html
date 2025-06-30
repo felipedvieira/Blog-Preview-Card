@@ -1,163 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+    <title>Frontend Mentor | Blog preview card</title>
 
-  <style>
-    body{
-    background-color:#F4D04E;
-    margin: 0;
-    
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-smoothing: grayscale;
-    }
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
 
-    p{
-      margin: 0;
-    }
+      body {
+        background-color: #f4d04e;
+        margin: 0;
 
-    h1{
-      margin: 0;
-    }
-    
-    a{
-      text-decoration: none;
-      color:black;
-      margin: 0;
-    }
-    a:hover{
-      color:#F4D04E;
-      
-    }
-    .relative{
-      position: relative;
-    }
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-smoothing: grayscale;
+      }
 
-    .auto-margin{
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
+      p {
+        margin: 0;
+      }
 
-    .whitebox{
-      background-color: white;
-      
-      width: 384px;
-      height: 522px;
-      border-color: black;
-      border-radius: 20px;
-      align-self: center;
-      box-shadow: 8px 8px black;
-    }
+      h1 {
+        margin: 0;
+      }
 
-    .yellowbox{
-      background-color: #F4D04E;
-      width: 82px;
-      height: 29px;
-      text-align: center;
-      border-radius: 5px;
-    }
-    
-    .flex{
-      display: flex;
-    }
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 0;
+      }
+      a:hover {
+        color: #f4d04e;
+      }
+      .relative {
+        position: relative;
+      }
 
-    .p-ele{
-      padding: 24px;
-    }
+      .auto-margin {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
 
-    .bolder{
-      font-weight: 800;
-    }
+      .whitebox {
+        background-color: white;
 
-    .text-Bold-24px{
-      font-family: "Figtree-ExtraBold", sans-serif;
-      font-size: 24px;
-      line-height: 150%;
-      font-weight: bolder;
-    }
-    .text-Medium-16px{
-      font-family: "Figtree-Medium", sans-serif;
-      font-size: 16px;
-      line-height: 150%;
-    }
-    .text-Medium-14px{
-      font-family: "Figtree-Medium", sans-serif;
-      font-size: 14px;
-      line-height: 150%;
-    }
-    .text-Bold-14px{
-      font-family: "Figtree-ExtraBold", sans-serif;
-      font-size: 14px;
-      line-height: 150%;
-      font-weight: bolder;
-    }
-    
+        width: 384px;
+        height: 522px;
+        border-color: black;
+        border-radius: 20px;
+        align-self: center;
+        box-shadow: 8px 8px black;
+      }
 
-  </style>
+      .yellowbox {
+        background-color: #f4d04e;
+        width: 82px;
+        height: 29px;
+        text-align: center;
+        border-radius: 5px;
+      }
 
-<body>
+      .flex {
+        display: flex;
+      }
 
+      .p-ele {
+        padding: 24px;
+      }
 
-  <section>
-    <div class="whitebox auto-margin relative" style="top: 80px">
-      
-      <div class="p-ele">
-      <div>
-        <img src="assets\images\illustration-article.svg" alt="image" style="width: 336px; height: 200px; border-radius:10px; margin-bottom: 12px;">
-      </div>
+      .bolder {
+        font-weight: 800;
+      }
 
-      <div> 
-        <div class="yellowbox relative">
-          <p class= "text-Bold-14px" style="padding: 6px 4px 12px 4px;">Learning</p>
+      .text-Bold-24px {
+        font-family: "Figtree-ExtraBold", sans-serif;
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: bolder;
+      }
+      .text-Medium-16px {
+        font-family: "Figtree-Medium", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+      }
+      .text-Medium-14px {
+        font-family: "Figtree-Medium", sans-serif;
+        font-size: 14px;
+        line-height: 150%;
+      }
+      .text-Bold-14px {
+        font-family: "Figtree-ExtraBold", sans-serif;
+        font-size: 14px;
+        line-height: 150%;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="whitebox auto-margin relative" style="top: 80px">
+        <div class="p-ele">
+          <div>
+            <img
+              src="assets\images\illustration-article.svg"
+              alt="image"
+              style="
+                width: 336px;
+                height: 200px;
+                border-radius: 10px;
+                margin-bottom: 12px;
+              "
+            />
+          </div>
+
+          <div>
+            <div class="yellowbox relative">
+              <p class="text-Bold-14px" style="padding: 6px 4px 12px 4px">
+                Learning
+              </p>
+            </div>
+
+            <p
+              class="text-Medium-14px"
+              style="padding-top: 12px; padding-bottom: 12px"
+            >
+              Published 21 Dec 2023
+            </p>
+
+            <a href="#" class="text-Bold-24px">HTML & CSS foundations</a>
+
+            <p
+              class="text-Medium-16px"
+              style="padding-top: 12px; margin-bottom: 4px; color: #6b6b6b"
+            >
+              These languages are the backbone of every website, defining
+              structure, content, and presentation.
+            </p>
+          </div>
+
+          <div class="flex" style="padding-top: 28px">
+            <img
+              src="assets\images\image-avatar.webp"
+              alt="pfp"
+              style="width: 32px; height: 32px"
+            />
+            <p
+              class="text-Bold-14px"
+              style="padding-top: 6px; padding-left: 10px; font-weight: bold"
+            >
+              Greg Hooper
+            </p>
+          </div>
         </div>
-
-      <p class="text-Medium-14px" style="padding-top:12px; padding-bottom: 12px;">Published 21 Dec 2023</p>
-
-      <a href="#" class= "text-Bold-24px">HTML & CSS foundations</a>
-
-      <p class= "text-Medium-16px" style="padding-top:12px; margin-bottom: 4px; color:#6B6B6B">These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </div>
+    </section>
 
-      <div class="flex" style="padding-top:28px">
-        <img src="assets\images\image-avatar.webp" alt="pfp" style="width: 32px; height: 32px;">
-        <p class="text-Bold-14px" style="padding-top: 6px; padding-left: 10px; font-weight:bold">Greg Hooper</p>
-      </div>
-      </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
+    the backbone of every website, defining structure, content, and
+    presentation. Greg Hooper
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">felipedvieira</a>.
     </div>
-  </section>
-
-
-
-      <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br> <hr>
-
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">felipedvieira</a>.
-  </div>
-</body>
+  </body>
 </html>
