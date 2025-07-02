@@ -27,16 +27,22 @@
       body {
         background-color: #f4d04e;
         margin: 0;
-
+        height: 100%;
+        display: flex;
         -webkit-font-smoothing: antialiased;
         -moz-osx-smoothing: grayscale;
+        flex-direction: column;
+      }
+
+      html{
+        height: 100%;
       }
 
       p {
         margin: 0;
       }
 
-      h1 {
+      h1,section {
         margin: 0;
       }
 
@@ -45,18 +51,19 @@
         color: black;
         margin: 0;
       }
+
+      section{
+        flex: 1;
+
+      }
+
+
+
       a:hover {
         color: #f4d04e;
       }
       .relative {
         position: relative;
-      }
-
-      .auto-margin {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
       }
 
       .whitebox {
@@ -116,8 +123,8 @@
   </head>
 
   <body>
-    <section>
-      <div class="whitebox auto-margin relative" style="top: 80px">
+    <section class="flex" style="justify-content: center;">
+      <div class="whitebox">
         <div class="p-ele">
           <div>
             <img
@@ -174,27 +181,15 @@
       </div>
     </section>
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <hr />
-
-    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-    the backbone of every website, defining structure, content, and
-    presentation. Greg Hooper
-
-    <div class="attribution">
+ <footer style="text-align: center; padding: 3rem;">
+    <hr>
+     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">felipedvieira</a>.
-    </div>
+  </footer>
+
   </body>
+
 </html>
